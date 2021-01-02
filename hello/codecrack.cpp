@@ -4,24 +4,28 @@
 
 void PlayGameAtDifficulty(int difficulty){
     printf("Welcome to level %d.\n", difficulty); //recall that C functions are fully functional in C++
-    const int a = 2;
-    const int b = 4;
-    const int c = 6;
+    const int A = 1 + rand() % (difficulty + 1);
+    const int B = 1 + rand() % (difficulty + 1);
+    const int C = 1 + rand() % (difficulty + 1);
 
-    const int sum = a + b + c;
-    const int prod = a * b * c;
+    const int Sum = A + B + C;
+    const int Prod = A * B * C;
 
-    int guessA = -1;
-    int guessB = -1;
-    int guessC = -1;
-    int gSum = -1;
-    int gProd = -1;
-    while(gSum != sum && gProd != prod){
-        printf("Sum: %d\nProduct: %d\n", sum, prod);
+    int GuessA = -1;
+    int GuessB = -1;
+    int GuessC = -1;
+    int GSum = -1;
+    int GProd = -1;
+    int correct = -1;
+    while(correct == -1){
+        printf("Sum: %d\nProduct: %d\n", Sum, Prod);
         printf("Enter your guesses for the variables, separated by a space.\n");
-        scanf("%d %d %d", &guessA, &guessB, &guessC);
-        gSum = guessA + guessB + guessC;
-        gProd = guessA * guessB * guessC;
+        scanf("%d %d %d", &GuessA, &GuessB, &GuessC);
+        GSum = GuessA + GuessB + GuessC;
+        GProd = GuessA * GuessB * GuessC;
+        if(GSum == Sum && GProd == Prod){
+            correct = 1;
+        }
     }
     printf("--- Code cracked ---\n");
     return;
