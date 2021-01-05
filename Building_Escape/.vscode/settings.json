@@ -1,0 +1,7 @@
+{
+	"files.exclude": {
+		"/Users/andrew_huang/unreal4/Building_Escape/.vscode": true,
+		"/Users/andrew_huang/unreal4/Building_Escape/Content": true,
+		"/Users/andrew_huang/unreal4/Building_Escape/Intermediate": true
+	}
+}

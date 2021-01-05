@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Building_Escape (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Building_Escape Mac Debug Build",
+			"program": "/Users/andrew_huang/unreal4/Building_Escape/Binaries/Mac/Building_Escape-Mac-Debug.app/Contents/MacOS/Building_Escape-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_Escape (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Building_Escape Mac DebugGame Build",
+			"program": "/Users/andrew_huang/unreal4/Building_Escape/Binaries/Mac/Building_Escape-Mac-DebugGame.app/Contents/MacOS/Building_Escape-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_Escape (Development)",
+			"request": "launch",
+			"preLaunchTask": "Building_Escape Mac Development Build",
+			"program": "/Users/andrew_huang/unreal4/Building_Escape/Binaries/Mac/Building_Escape.app/Contents/MacOS/Building_Escape",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_Escape (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Building_Escape Mac Shipping Build",
+			"program": "/Users/andrew_huang/unreal4/Building_Escape/Binaries/Mac/Building_Escape-Mac-Shipping.app/Contents/MacOS/Building_Escape-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_Escape (Test)",
+			"request": "launch",
+			"preLaunchTask": "Building_Escape Mac Test Build",
+			"program": "/Users/andrew_huang/unreal4/Building_Escape/Binaries/Mac/Building_Escape-Mac-Test.app/Contents/MacOS/Building_Escape-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_EscapeEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Building_EscapeEditor Mac Debug Build",
+			"program": "/Users/Shared/Epic Games/UE_4.22/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/andrew_huang/unreal4/Building_Escape/Building_Escape.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_EscapeEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Building_EscapeEditor Mac DebugGame Build",
+			"program": "/Users/Shared/Epic Games/UE_4.22/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/andrew_huang/unreal4/Building_Escape/Building_Escape.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Building_EscapeEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "Building_EscapeEditor Mac Development Build",
+			"program": "/Users/Shared/Epic Games/UE_4.22/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/andrew_huang/unreal4/Building_Escape/Building_Escape.uproject"
+			],
+			"cwd": "/Users/Shared/Epic Games/UE_4.22",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/Epic Games/UE_4.22/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/andrew_huang/unreal4/Building_Escape/Building_Escape.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/Epic Games/UE_4.22"
+		}
+	]
+}
